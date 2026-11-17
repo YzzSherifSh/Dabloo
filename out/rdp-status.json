@@ -13,52 +13,52 @@
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-11-16T23:16:23Z",
-  "expires_at": "2026-11-17T04:58:23Z",
+  "started_at": "2026-11-17T05:59:03Z",
+  "expires_at": "2026-11-17T11:41:03Z",
   "duration_menit": 342,
   "run_id": "43977673258",
-  "run_attempt": "1",
+  "run_attempt": "2",
   "run_number": "4",
   "run_url": "https://github.com/YzzSherifSh/Dabloo/actions/runs/43977673258",
   "mode": "bersih+win10",
   "runtimes": {
-    "vc2005x64": "dilewati (mode cepat)",
+    "vc2022x86": "sudah ada",
     "directx9": "ok",
-    "net35": "dilewati (mode cepat)",
-    "vc2008x64": "dilewati (mode cepat)",
+    "vc2005x64": "dilewati (mode cepat)",
     "vc2022x64": "sudah ada",
-    "vc2022x86": "sudah ada"
+    "vc2008x64": "dilewati (mode cepat)",
+    "net35": "dilewati (mode cepat)"
   },
   "persist": {
-    "profile": "C:\\Users\\xyadmin",
-    "files": 1753,
     "restored": true,
-    "source": "xyrdp-state.7z.enc"
+    "source": "xyrdp-state.7z.enc",
+    "profile": "C:\\Users\\xyadmin",
+    "files": 1925
   },
   "storage": {
     "status": "ok",
     "mode": "boost-ringan",
-    "before_gb": 26.22,
-    "after_gb": 43.87,
-    "gained_gb": 17.65,
+    "before_gb": 26.17,
+    "after_gb": 43.72,
+    "gained_gb": 17.55,
     "removed_targets": 31,
     "drives": [
       {
-        "free_gb": 43.87,
-        "letter": "C",
+        "free_gb": 43.72,
         "size_gb": 149.89,
-        "used_gb": 106.02
+        "used_gb": 106.16,
+        "letter": "C"
       },
       {
         "free_gb": 219.84,
-        "letter": "D",
         "size_gb": 219.98,
-        "used_gb": 0.14
+        "used_gb": 0.14,
+        "letter": "D"
       }
     ],
     "game_dir": "D:\\Games (disarankan untuk GTA)",
     "note": "Cleanup selesai. gained_gb adalah perubahan ruang aktual, bukan kapasitas yang dijanjikan. Target terkunci bisa tersisa.",
-    "updated_at": "2026-11-16T23:25:32.4746844Z"
+    "updated_at": "2026-11-17T06:05:21.9236976Z"
   },
   "fps_boost": {
     "status": "ok",
@@ -74,9 +74,9 @@
     ],
     "skipped": [],
     "applied_count": 8,
-    "elapsed_sec": 2.0,
+    "elapsed_sec": 1.7,
     "note": "Tweak rendering RDP & scheduler OS. Tidak menaikkan FPS game 3D tanpa GPU fisik; Mesa3D/WARP tetap dipakai.",
-    "updated_at": "2026-11-16T23:25:34.8842035Z"
+    "updated_at": "2026-11-17T06:05:23.9574744Z"
   },
   "win10": {
     "look": "ok",
@@ -87,12 +87,12 @@
     "note": "Tampilan Windows 10 (UI Windows Server 2022 = kernel/UI Windows 10 21H2)"
   },
   "grafis": {
-    "adapters": "Microsoft Hyper-V Video",
-    "mode": "software",
-    "path": "C:\\XyRDP\\grafis\\mesa-x64",
-    "vulkan": "lavapipe 1.3 (CPU)",
     "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
-    "mesa": "26.2.6"
+    "vulkan": "lavapipe 1.3 (CPU)",
+    "path": "C:\\XyRDP\\grafis\\mesa-x64",
+    "mode": "software",
+    "mesa": "26.2.6",
+    "adapters": "Microsoft Hyper-V Video"
   },
   "native_core": {
     "csharp_mac_launcher": "ok",
@@ -128,21 +128,21 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
-    "tunnel": {
-      "port": 3389,
-      "host": "100.98.85.60",
+    "tailscale": {
       "status": "ok",
-      "outside": "tailscale",
-      "address": "100.98.85.60:3389",
-      "selftest": "ok"
+      "ip": "100.106.113.95",
+      "magicdns": "rdpfree-8.tail73435b.ts.net.",
+      "hostname": "rdpfree",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL."
     },
     "mode": "tailscale",
-    "tailscale": {
-      "ip": "100.98.85.60",
-      "hostname": "rdpfree",
+    "tunnel": {
       "status": "ok",
-      "magicdns": "rdpfree-7.tail73435b.ts.net.",
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL."
+      "address": "100.106.113.95:3389",
+      "selftest": "ok",
+      "host": "100.106.113.95",
+      "outside": "tailscale",
+      "port": 3389
     }
   }
 }
