@@ -1,64 +1,64 @@
 {
   "active": true,
-  "hostname": "rdpfree-10",
+  "hostname": "rdpfree-11",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
     "disk_free_gb": 79.2,
-    "ram_gb": 16.0,
-    "cpu_threads": 4
+    "cpu_threads": 4,
+    "ram_gb": 16.0
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-11-18T21:49:33Z",
-  "expires_at": "2026-11-19T03:31:33Z",
+  "started_at": "2026-11-19T03:41:34Z",
+  "expires_at": "2026-11-19T09:23:34Z",
   "duration_menit": 342,
-  "run_id": "44405250883",
+  "run_id": "44453100712",
   "run_attempt": "1",
-  "run_number": "10",
-  "run_url": "https://github.com/YzzSherifSh/Dabloo/actions/runs/44405250883",
+  "run_number": "11",
+  "run_url": "https://github.com/YzzSherifSh/Dabloo/actions/runs/44453100712",
   "mode": "bersih+win10",
   "runtimes": {
     "directx9": "ok",
+    "net35": "dilewati (mode cepat)",
     "vc2022x64": "sudah ada",
     "vc2008x64": "dilewati (mode cepat)",
-    "vc2005x64": "dilewati (mode cepat)",
     "vc2022x86": "sudah ada",
-    "net35": "dilewati (mode cepat)"
+    "vc2005x64": "dilewati (mode cepat)"
   },
   "persist": {
     "profile": "C:\\Users\\xyadmin",
-    "source": "xyrdp-state.7z.enc",
+    "restored": true,
     "files": 1546,
-    "restored": true
+    "source": "xyrdp-state.7z.enc"
   },
   "storage": {
     "status": "ok",
     "mode": "boost-ringan",
-    "before_gb": 78.41,
-    "after_gb": 110.69,
-    "gained_gb": 32.28,
+    "before_gb": 78.45,
+    "after_gb": 115.76,
+    "gained_gb": 37.31,
     "removed_targets": 32,
     "drives": [
       {
-        "used_gb": 144.76,
-        "free_gb": 110.69,
-        "letter": "C",
-        "size_gb": 255.45
+        "used_gb": 139.69,
+        "free_gb": 115.76,
+        "size_gb": 255.45,
+        "letter": "C"
       },
       {
         "used_gb": 3.01,
         "free_gb": 146.98,
-        "letter": "D",
-        "size_gb": 150.0
+        "size_gb": 150.0,
+        "letter": "D"
       }
     ],
     "game_dir": "D:\\Games (disarankan untuk GTA)",
     "note": "Cleanup selesai. gained_gb adalah perubahan ruang aktual, bukan kapasitas yang dijanjikan. Target terkunci bisa tersisa.",
-    "updated_at": "2026-11-18T21:58:17.2415459Z"
+    "updated_at": "2026-11-19T03:49:03.356687Z"
   },
   "fps_boost": {
     "status": "ok",
@@ -74,9 +74,9 @@
     ],
     "skipped": [],
     "applied_count": 8,
-    "elapsed_sec": 1.5,
+    "elapsed_sec": 1.4,
     "note": "Tweak rendering RDP & scheduler OS. Tidak menaikkan FPS game 3D tanpa GPU fisik; Mesa3D/WARP tetap dipakai.",
-    "updated_at": "2026-11-18T21:58:19.1457688Z"
+    "updated_at": "2026-11-19T03:49:05.1353234Z"
   },
   "win10": {
     "look": "ok",
@@ -87,12 +87,12 @@
     "note": "Tampilan Windows 10 (UI Windows Server 2022 = kernel/UI Windows 10 21H2)"
   },
   "grafis": {
-    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
-    "mode": "software",
-    "adapters": "Microsoft Hyper-V Video",
     "mesa": "26.2.7",
-    "path": "C:\\XyRDP\\grafis\\mesa-x64",
-    "vulkan": "lavapipe 1.3 (CPU)"
+    "vulkan": "lavapipe 1.3 (CPU)",
+    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
+    "adapters": "Microsoft Hyper-V Video",
+    "mode": "software",
+    "path": "C:\\XyRDP\\grafis\\mesa-x64"
   },
   "native_core": {
     "csharp_mac_launcher": "ok",
@@ -118,20 +118,20 @@
   },
   "akses": {
     "tunnel": {
-      "address": "100.110.215.111:3389",
-      "host": "100.110.215.111",
-      "status": "ok",
-      "selftest": "ok",
+      "outside": "tailscale",
       "port": 3389,
-      "outside": "tailscale"
+      "address": "100.84.27.5:3389",
+      "status": "ok",
+      "host": "100.84.27.5",
+      "selftest": "ok"
     },
+    "mode": "tailscale",
     "tailscale": {
-      "ip": "100.110.215.111",
       "status": "ok",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "ip": "100.84.27.5",
       "hostname": "rdpfree",
-      "magicdns": "rdpfree-14.tail73435b.ts.net."
-    },
-    "mode": "tailscale"
+      "magicdns": "rdpfree-15.tail73435b.ts.net."
+    }
   }
 }
